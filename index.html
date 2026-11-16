@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YT Factory Uploader</title>
+<meta name="description" content="YT Factory Uploader is a personal tool that uploads videos to its owner's own YouTube channels through the YouTube Data API.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./"><span class="dot"></span>YT Factory Uploader</a>
+  <nav>
+    <a href="./" aria-current="page">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+</header>
+<main>
+  <h1>YT Factory Uploader</h1>
+  <p class="lead">A personal tool that uploads videos to my own YouTube channels through the YouTube Data API v3.</p>
+
+  <h2>What it is</h2>
+  <p>YT Factory Uploader is a small private program that runs only on my own computer. I produce long-form videos
+  for several YouTube channels that I own, and this tool publishes them: it uploads each finished video, sets its
+  title, description, tags and thumbnail, and schedules the publication time.</p>
+  <p>It is not a public service. There are no other users, no sign-up, and it never accesses channels that do not
+  belong to me.</p>
+
+  <h2>How it uses YouTube API Services</h2>
+  <ul>
+    <li>Uploads videos (<code>videos.insert</code>) and sets thumbnails (<code>thumbnails.set</code>) on my channels.</li>
+    <li>Reads basic information and statistics of my own channels (<code>channels.list</code>), for example to check
+      that the right channel is selected and that it is allowed to upload long videos.</li>
+    <li>Marks every upload as containing altered or synthetic content: the narration uses a text-to-speech voice.</li>
+  </ul>
+  <p>This tool uses YouTube API Services. See the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+  and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <div class="card">
+    <strong>Contact</strong><br>
+    Questions about this tool: <a href="mailto:saceradzeb@gmail.com">saceradzeb@gmail.com</a>
+  </div>
+</main>
+<footer>
+  YT Factory Uploader · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+  <a href="mailto:saceradzeb@gmail.com">saceradzeb@gmail.com</a>
+</footer>
+</body>
+</html>
